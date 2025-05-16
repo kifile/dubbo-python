@@ -17,5 +17,6 @@
 from .bootstrap import Dubbo
 from .client import Client
 from .server import Server
+from .__about__ import __version__
 
-__all__ = ["Dubbo", "Client", "Server"]
+__all__ = ["Dubbo", "Client", "Server", "__version__"]
