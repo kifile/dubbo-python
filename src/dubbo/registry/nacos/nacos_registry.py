@@ -67,7 +67,7 @@ def _init_nacos_client(url: URL) -> NacosClient:
     parameters = url.parameters
 
     endpoint = parameters.get("endpoint")
-    namespace = parameters.get(registry_constants.NAMESPACE)
+    namespace = parameters.get(registry_constants.NAMESPACE_KEY)
     username = url.username
     password = url.password
 

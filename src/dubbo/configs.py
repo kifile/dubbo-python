@@ -711,7 +711,7 @@ class RegistryConfig(AbstractConfig):
         if self.load_balance:
             parameters[registry_constants.LOAD_BALANCE_KEY] = self.load_balance
         if self.namespace:
-            parameters[registry_constants.NAMESPACE] = self.namespace
+            parameters[registry_constants.NAMESPACE_KEY] = self.namespace
         if self.group:
             parameters[config_constants.GROUP] = self.group
         if self.version:
@@ -747,7 +747,7 @@ class RegistryConfig(AbstractConfig):
             load_balance=url.parameters.get(registry_constants.LOAD_BALANCE_KEY),
             group=url.parameters.get(config_constants.GROUP),
             version=url.parameters.get(config_constants.VERSION),
-            namespace=url.parameters.get(registry_constants.NAMESPACE),
+            namespace=url.parameters.get(registry_constants.NAMESPACE_KEY),
         )
 
 
